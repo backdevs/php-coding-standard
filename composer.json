@@ -1,0 +1,29 @@
+{
+    "name": "backdevs/coding-standard",
+    "description": "Backdevs PHP_CodeSniffer Coding Standard and other static analysis tools' configurations.",
+    "type": "phpcodesniffer-standard",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bogdan Nicorici",
+            "email": "bogdan@backdevs.net"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "squizlabs/php_codesniffer": "^3.10",
+        "slevomat/coding-standard": "^8.15",
+        "phpmd/phpmd": "^2.15"
+    },
+    "autoload": {
+        "psr-4": {
+            "BackdevsCodingStandard\\": "CodingStandard/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}
